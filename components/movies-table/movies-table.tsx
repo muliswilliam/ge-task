@@ -43,6 +43,8 @@ export const MoviesTable = (props: MoviesTableProps) => {
     onPrevious,
   } = props
 
+  console.log(currentPage)
+
   return (
     <Stack direction='column' spacing='12px'>
       <TableContainer
@@ -84,7 +86,7 @@ export const MoviesTable = (props: MoviesTableProps) => {
             size='sm'
             variant='solid'
             onClick={onPrevious}
-            disabled={currentPage === 1}
+            isDisabled={currentPage === 1}
           >
             Previous
           </Button>
@@ -93,7 +95,7 @@ export const MoviesTable = (props: MoviesTableProps) => {
             colorScheme='teal'
             size='sm'
             onClick={onNext}
-            disabled={isPreviousData && !hasMore}
+            isDisabled={isPreviousData && !hasMore}
           >
             Next
           </Button>          
