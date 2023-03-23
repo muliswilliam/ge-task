@@ -43,8 +43,6 @@ export const MoviesTable = (props: MoviesTableProps) => {
     onPrevious,
   } = props
 
-  console.log(currentPage)
-
   return (
     <Stack direction='column' spacing='12px'>
       <TableContainer
