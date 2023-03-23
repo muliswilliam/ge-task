@@ -63,7 +63,7 @@ export const MoviesTable = (props: MoviesTableProps) => {
                   <Text width='500px' textOverflow='ellipsis' overflow='hidden'>{movie.title.native}</Text>
                 </Td>
                 <Td>
-                  <Link href={movie.externalLinks[0]?.url} overflow='hidden' color='teal'>
+                  <Link target="_blank" rel="noopener noreferrer" href={movie.externalLinks[0]?.url} color='teal'>
                     {movie.externalLinks[0]?.url}
                   </Link>
                 </Td>
